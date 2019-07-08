@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>SpaceX</title>
+</head>
+
+<body>
+    <div class="left-screen side">
+        <section class="col1">
+            <div class="col1-row panel-block">
+                <span class="up-text ">Crew</span>
+                DRAGON
+            </div>
+            <div class="col1-row panel-block">
+                <div class="before-m">
+                    <span class="up-text">Perigee</span><br>
+                    185.013
+                </div>
+            </div>
+            <div class="col1-row panel-block">
+                <div class="before-m">
+                    <span class="up-text">Apogee</span><br>
+                    360.304
+                </div>
+            </div>
+            <div class="col1-row panel-block">
+                <div class="before-m">
+                    <span class="up-text">Relative Altitude</span><br>
+                    50,948
+                </div>
+                <i class="fa fa-arrow-down"></i>
+            </div>
+            <div class="col1-row panel-block">
+                <div class="before-m">
+                    <span class="up-text">Range to ISS</span><br>
+                    625,713
+                </div>
+                <i class="fa fa-arrow-down"></i>
+            </div>
+        </section>
+        <section class="space-image">
+        </section>
+        <section class="col2">
+            <div class="col2-row panel-block">
+                <span class="up-text">Day 131</span><br>
+                13:46:11
+            </div>
+            <div class="col2-row panel-block"></div>
+            <div class="col2-row panel-block"><span class="up-text">Next Burn</span>
+                <span class="blue-up-text">Enabled</span><br>
+                -0:05:48 <br>
+                <span class="up-text">13:52:00</span> <span class="up-text">DAY 113</span>
+            </div>
+            <div class="col2-row panel-block">
+                <span class="up-text">Target</span><br>
+                33.5 <span class="ms-text">m/s</span><br>
+                <span class="blue-up-text">Thruster Temps</span>
+            </div>
+        </section>
+        <section class="col3 panel-block">
+            <div class="col3-row"><span class="big-text">0</span>ALARMS</div>
+            <div class="col3-row"> ALL SYSTEMS NOMINAL <i class="fa fa-check fa-lg"></i></div>
+        </section>
+        <section class="col4">
+            <div class="col4-left">
+                <div class="col4-left-row panel-block">
+                    <span class="med-text">-0:08:24</span>
+                    <span>Next LOS <br> (00:03:17)</span>
+                    <span>13:54:36 <br>DAY 131</span>
+                </div>
+                <div class="col4-left-row panel-block">
+                    <span class="med-text">-02:51:02</span>
+                    <span>Estimated ISS Arival</span>
+                    <span>16:37:15 <br>
+                        DAY 131</span>
+                </div>
+            </div>
+            <div class="col4-right panel-block">
+                <div class="col4-left-row">
+                    <span class="med-text">-0:23:23</span>
+                    <span>Next Deorbit Window <br> Pacific</span>
+                    <span>14:09:36 <br> DAY 131</span>
+                </div>
+                <hr id="wline">
+                <div class="col4-left-row">
+                    <span><span class="blue-text">Current Breakout</span><br>
+                        <span>Retrohrade</span></span>
+                    <span>&#916 V=5.0 m/s</span>
+                </div>
+            </div>
+        </section>
+        <section class="col5 panel-block" onclick="f1()">
+            <span class="med-text">Schedule</span><span>ALL EVENTS <i class="fa fa-chevron-down" id="arrow"></i> </span>
+        </section>
+        <section class="col6 panel-block" id="drop">
+            <div class="col6-left">
+                <span>13:10:00</span>
+                <span>13:37:00</span>
+                <span>13:46:45</span>
+                <span>13:52:10</span>
+            </div>
+            <span id="white-circle"></span>
+            <div class="col6-right">
+                <span class="col-6-right-row"><span>Rendezvous Burn GO/NOT-GO</span><span>Ground</span></span>
+                <hr>
+                <span class="col-6-right-row"><span>Prepare for rendezvous burn</span><span>Crew</span></span>
+                <hr>
+                <span class="col-6-right-row"><span>Rendezvousburn slow</span><span></span>Dragon</span>
+                <hr>
+                <span class="col-6-right-row"><span>Rendezvous Burn</span><span></span>Dragon</span>
+            </div>
+        </section>
+
+        <section class="col7">
+            <div class="panel-block">Rendez-vous</div>
+            <div class="panel-block">Approach</div>
+        </section>
+        <div class="line">
+
+        </div>
+        <section class="col8">
+            <div class="col8-col">
+                <div class="col8-col-row">Ground</div>
+                <div class="col8-col-row"><span class="square sq1"></span></div>
+                <div class="col8-col-row"><span class="square sq2"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq2"></span></div>
+                <div class="col8-col-row"><span class="square"></span></div>
+                <div class="col8-col-row"><span class="square sq3"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square"></span></div>
+                <div class="col8-col-row"><span class="square sq4"></span></div>
+            </div>
+            <div class="col8-col">
+                <div class="col8-col-row">TDRS</div>
+                <div class="col8-col-row"><span class="square sq5"></span></div>
+                <div class="col8-col-row"><span class="square sq6"></span></div>
+                <div class="col8-col-row"><span class="square sq7"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq5"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq6"></span></div>
+            </div>
+            <div class="col8-col">
+                <div class="col8-col-row">ISS</div>
+                <div class="col8-col-row"><span class="square sq8"></span></div>
+                <div class="col8-col-row"><span class="square sq8"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq9"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq10"></span></div>
+                <div class="col8-col-row"></div>
+            </div>
+            <div class="col8-col">
+                <div class="col8-col-row">Eclipse</div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq11"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq11"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq11"></span></div>
+            </div>
+            <div class="col8-col">
+                <div class="col8-col-row">Burn</div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+            </div>
+            <div class="col8-col">
+                <div class="col8-col-row">Crew</div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"><span class="square sq8"></span></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+                <div class="col8-col-row"></div>
+            </div>
+            <div class="col8-col">
+                <span class="time-line">12:30</span>
+                <span class="time-line">13:00</span>
+                <span class="time-line">13:30</span>
+                <span class="time-line">14:00</span>
+                <span class="time-line">14:30</span>
+                <span class="time-line">15:00</span>
+                <span class="time-line">15:30</span>
+                <span class="time-line">16:00</span>
+                <span class="time-line">16:30</span>
+            </div>
+        </section>
+        <section class="pg-line">
+            <div class="pg-line-left"></div>
+            <div class="pg-line-right"></div>
+        </section>
+    </div>
+    <div class="right-screen side"></div>
+    <script>
+        function f1() {
+            let x = document.getElementById("drop");
+            let r = document.getElementById("arrow");
+            if (x.style.height == "0px") {
+                r.style.transform = "rotate(180deg)"
+                x.style.padding = "10px"
+                x.style.height = "120px";
+                x.style.visibility = "visible"
+            }
+            else {
+                r.style.transform = "rotate(0deg)"
+                x.style.padding = "0px"
+                x.style.height = "0px";
+                x.style.visibility = "hidden"
+            }
+        }
+    </script>
+</body>
+
+</html>
